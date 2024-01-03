@@ -17,7 +17,7 @@
         }
     };
 
-    const stepElems = document.querySelectorAll('.step')
+    const stepElems = document.querySelectorAll('.step');
     const graphicElems = document.querySelectorAll('.graphic-item');
     let currentItem = graphicElems[0]; // 현재 활성화된(visible 클래스가 붙은) .graphic-item을 지정
     let ioIndex;
@@ -75,3 +75,4 @@
 })();
 
 // 1. (() => {})() : IIFE(즉시 실행 함수 표현)
+// 2. const constant = {}
