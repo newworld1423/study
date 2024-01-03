@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script>
+        //document.getElementById('alert').innerHTML = '??';
+        //Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')
+    </script>
+
+    <div class="alert-box" id="alert">
+        <p>Alert 박스</p>
+        <button onclick="alertClose()">닫기</button>
+    </div>
+    <button onclick="alertOpen()">버튼</button>
+
+    <script>
+        //document.getElementById('alert1').innerHTML = '??';
+        //Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')
+
+        //document.getElementByid('alert').innerHTML = '??';
+        //Uncaught TypeError: document.getElementByid is not a function
+
+        function alertOpen(){
+            document.getElementById('alert').style.display = 'block';
+        }
+
+        function alertClose(){
+            document.getElementById('alert').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
