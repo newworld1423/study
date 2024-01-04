@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="alert-box" id="alert">
+        <p id="title">Alert 박스</p>
+        <button id="close">X</button>
+    </div>
+    <button onclick="alertOpen('아이디입력하세요','block');">버튼1</button>
+    <button onclick="alertOpen('비번입력하세요','block');">버튼2</button>
+
+    <script>
+        function alertOpen(parameter1, parameter2){
+            //1. 제목바꾸기
+            document.getElementById('title').innerHTML = parameter1;
+            //document.getElementsByClassName('alert-box')[0]; 클래스 요소 중 첫번째 요소
+            //2. 열기
+            document.getElementById('alert').style.display = parameter2;
+        }
+
+        document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
