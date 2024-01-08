@@ -52,3 +52,5 @@ function frameAction(){
     dino.draw();
 }
 frameAction();
+
+//aaa
