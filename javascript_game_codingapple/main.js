@@ -82,7 +82,6 @@ function frameAction(){
     }
     dino.draw()
 }
-
 frameAction();
 
 //충돌확인
